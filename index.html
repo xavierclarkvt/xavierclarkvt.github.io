@@ -11,11 +11,61 @@
     <link rel="stylesheet" href="res/master.css">
     <link rel="icon" href="res/favicon.svg">
 
-    <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
-
-    <title>Hello, world!</title>
+    <title>Xavier Clark</title>
   </head>
   <body>
-    <h1 class="text-center">Hello, world!</h1>
+    <div class="container text-center">
+      <video autoplay loop muted playsinline class="ratio" style="height:80%">
+        <source src="res/Welcome_comp.webm" type="video/webm">
+        <source src="res/Welcome.mp4" type="video/mp4">
+      </video>
+      <p>Hey! I'm <em>Xavier Clark</em> and I like to make things.</p>
+    </div>
+
+    <div class="container">
+      <h1 class="text-center">Projects</h1>
+
+      <hr/>
+      <div class="row">
+        <div class="col">
+          <p class="text-center my-auto">Software</p>
+        </div>
+        <div class="col">
+          <p class="text-center my-auto">Hardware</p>
+        </div>
+        <div class="col">
+          <p class="text-center my-auto">Design</p>
+        </div>
+      </div>
+      <hr/>
+
+      <!-- Project with text on Left -->
+      <a href="test-left" class="row project">
+        <div class="col-5 align-self-center proj-left">
+          <h2 class="text-start my-auto">
+            oh this is a project. 
+            This one has a lot of text. 
+            Probably way too much
+          </h2>
+        </div>
+        <div class="col-7 text-start">
+          <img src="https://picsum.photos/500/400" class="img-fluid project-img rounded-3" alt="left image"/>
+        </div>
+      </a>
+
+      <div style="height: 5vh;"></div>
+
+      <!-- Project with text on Right -->
+      <a href="test-left" class="row project">
+        <div class="col-7 text-end">
+          <img src="https://picsum.photos/400/500" class="img-fluid project-img rounded-3" alt="right image"/>
+        </div>
+        <div class="col-5 align-self-center proj-right">
+          <h2 class="text-end my-auto">
+            Title (year): I did a cool thing using [tech] and [tech].
+          </h2>
+        </div>
+      </a>
+    </div>
   </body>
 </html>
