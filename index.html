@@ -11,6 +11,21 @@
     <link rel="stylesheet" href="res/master.css">
     <link rel="icon" href="res/favicon.svg">
 
+    <!-- code for filtering project types-->
+    <script>
+      function filterProjects(type) { // types can be: 'soft', 'hard', 'desg'
+        let buttons = document.getElementsByClassName('filter-button');
+        for (let i = 0; i < buttons.length; i++) {
+          if (buttons[i].id === type) { buttons[i].classList.add('text-decoration-underline') } else { buttons[i].classList.remove('text-decoration-underline') }
+        }
+
+        let projs = document.getElementsByClassName('project');
+        for (let i = 0; i < projs.length; i++) { 
+          if (!projs[i].classList.contains(type)) { projs[i].classList.add('hide') } else { projs[i].classList.remove('hide') }
+        }
+      }
+    </script>
+
     <title>Xavier Clark</title>
   </head>
   <body>
@@ -22,28 +37,147 @@
       <p>Hey! I'm <em>Xavier Clark</em> and I like to make things.</p>
     </div>
 
-    <div class="container">
-      <h1 class="text-center">Projects</h1>
-
-      <hr/> 
-      <!-- TODO: make options below into clickable buttons, should hide all elements that are not of [type] -->
-      <!-- try to not use JS! -->
-      <div class="row">
-        <div class="col">
-          <p class="text-center my-auto">Software</p>
+    <div class="container">      
+      <!-- Project Filters -->
+      <div class="h3 sticky-top">
+        <hr/>
+        <div class="hstack">
+          <h1 class="text-center">Projects:</h1>
+          <a onclick="filterProjects('project');" class="filter-button m-auto grow text-decoration-underline" id="project">
+            All
+          </a>
+          <div class="vr"></div>
+          <a onclick="filterProjects('soft');" class="filter-button m-auto grow" id="soft">
+            Software
+          </a>
+          <div class="vr"></div>
+          <a onclick="filterProjects('hard');" class="filter-button m-auto grow" id="hard">
+            Hardware
+          </a>
+          <div class="vr"></div>
+          <a onclick="filterProjects('desg');" class="filter-button m-auto grow" id="desg">
+            Design
+          </a>
         </div>
-        <div class="col">
-          <p class="text-center my-auto">Hardware</p>
-        </div>
-        <div class="col">
-          <p class="text-center my-auto">Design</p>
-        </div>
+        <hr/>
       </div>
-      <hr/>
+
+      <!-- Project with text on Left -->
+      <a href="test-left" class="project row grow soft">
+        <div class="col-5 align-self-center proj-left">
+          <h2 class="text-start my-auto">
+            software proj
+          </h2>
+        </div>
+        <div class="col-7 text-start">
+          <img src="https://picsum.photos/500/400" class="img-fluid project-img rounded-3" alt="left image"/>
+        </div>
+        <div style="height: 5vh;"></div>
+      </a>
+
+      <!-- Project with text on Right -->
+      <a href="test-right" class="project row grow hard">
+        <div class="col-7 text-end">
+          <img src="https://picsum.photos/400/500" class="img-fluid project-img rounded-3" alt="right image"/>
+        </div>
+        <div class="col-5 align-self-center proj-right">
+          <h2 class="text-end my-auto">
+            Title (year): I did a cool thing using [tech] and [tech]. Hardware Proj
+          </h2>
+        </div>
+        <div style="height: 5vh;"></div>
+      </a>
+
+      <!-- Project with text on Left -->
+      <a href="test-left" class="project row grow desg">
+        <div class="col-5 align-self-center proj-left">
+          <h2 class="text-start my-auto">
+            oh this is a project. 
+            This one has a lot of text. 
+            Design proj
+          </h2>
+        </div>
+        <div class="col-7 text-start">
+          <img src="https://picsum.photos/500/400" class="img-fluid project-img rounded-3" alt="left image"/>
+        </div>
+        <div style="height: 5vh;"></div>
+      </a>
+
+      <!-- Project with text on Right -->
+      <a href="test-right" class="project row grow soft desg">
+        <div class="col-7 text-end">
+          <img src="https://picsum.photos/400/500" class="img-fluid project-img rounded-3" alt="right image"/>
+        </div>
+        <div class="col-5 align-self-center proj-right">
+          <h2 class="text-end my-auto">
+            Title (year): I did a cool thing using [tech] and [tech]. soft and desg
+          </h2>
+        </div>
+        <div style="height: 5vh;"></div>
+      </a>
+
+      <!-- Project with text on Left -->
+      <a href="test-left" class="project row grow soft hard">
+        <div class="col-5 align-self-center proj-left">
+          <h2 class="text-start my-auto">
+            oh this is a project. 
+            This one has a lot of text. 
+            Probably way too much soft and hard
+          </h2>
+        </div>
+        <div class="col-7 text-start">
+          <img src="https://picsum.photos/500/400" class="img-fluid project-img rounded-3" alt="left image"/>
+        </div>
+        <div style="height: 5vh;"></div>
+      </a>
+
+      <!-- Project with text on Right -->
+      <a href="test-right" class="project row grow hard desg">
+        <div class="col-7 text-end">
+          <img src="https://picsum.photos/400/500" class="img-fluid project-img rounded-3" alt="right image"/>
+        </div>
+        <div class="col-5 align-self-center proj-right">
+          <h2 class="text-end my-auto">
+            Title (year): I did a cool thing using [tech] and [tech]. hard and desg
+          </h2>
+        </div>
+        <div style="height: 5vh;"></div>
+      </a>
+
+      <!-- Project with text on Left -->
+      <a href="test-left" class="project row grow">
+        <div class="col-5 align-self-center proj-left">
+          <h2 class="text-start my-auto">
+            oh this is a project. 
+            This one has a lot of text. 
+            Probably way too much
+            [None]
+          </h2>
+        </div>
+        <div class="col-7 text-start">
+          <img src="https://picsum.photos/500/400" class="img-fluid project-img rounded-3" alt="left image"/>
+        </div>
+        <div style="height: 5vh;"></div>
+      </a>
+
+      <!-- Project with text on Right -->
+      <a href="test-right" class="project row grow soft desg hard">
+        <div class="col-7 text-end">
+          <img src="https://picsum.photos/400/500" class="img-fluid project-img rounded-3" alt="right image"/>
+        </div>
+        <div class="col-5 align-self-center proj-right">
+          <h2 class="text-end my-auto">
+            Title (year): I did a cool thing using [tech] and [tech].
+            [All]
+          </h2>
+        </div>
+        <div style="height: 5vh;"></div>
+      </a>
+
 
       <!-- *** BELOW IS FOR REFERENCE - DON'T REMOVE! *** --> <!-- TODO: comment out -->
       <!-- Project with text on Left -->
-      <a href="test-left" class="row project">
+      <!-- <a href="test-left" class="project row grow [type]">
         <div class="col-5 align-self-center proj-left">
           <h2 class="text-start my-auto">
             oh this is a project. 
@@ -54,12 +188,11 @@
         <div class="col-7 text-start">
           <img src="https://picsum.photos/500/400" class="img-fluid project-img rounded-3" alt="left image"/>
         </div>
-      </a>
-
-      <div style="height: 5vh;"></div>
+        <div style="height: 5vh;"></div>
+      </a> -->
 
       <!-- Project with text on Right -->
-      <a href="test-left" class="row project">
+      <!-- <a href="test-right" class="project row grow [type]">
         <div class="col-7 text-end">
           <img src="https://picsum.photos/400/500" class="img-fluid project-img rounded-3" alt="right image"/>
         </div>
@@ -68,7 +201,8 @@
             Title (year): I did a cool thing using [tech] and [tech].
           </h2>
         </div>
-      </a>
+        <div style="height: 5vh;"></div>
+      </a> -->
     </div>
   </body>
 </html>
