@@ -12,23 +12,32 @@ body{
 video {
   max-width: 93%;
 }
-
 a{
   color: black;
   text-decoration: none;
 }
-
-.h3 {
+.filter-toolbar {
   background-color: white;
 }
-
-/* project specific */
 .grow {
+  transform: scale(0.97);
   transition: all .2s ease-in-out;
 }
 .grow:hover {
-  transform: scale(1.05);
+  transform: scale(1.00);
+  color:#8a2be2;
 }
+.position-sticky {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 5vh;
+  bottom: auto;
+}
+
+/* project specific */
 .proj-left {
   position: relative;
   left: 20vw;
