@@ -27,6 +27,11 @@ a{
   transform: scale(1.00);
   color:#8a2be2;
 }
+.header {
+  color:white;
+  background-color: black;
+}
+
 .position-sticky {
   position: -webkit-sticky;
   position: -moz-sticky;
