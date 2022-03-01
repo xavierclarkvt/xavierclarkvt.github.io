@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
+  font-display: swap;
   font-weight: 600;
   src: url(./fonts/Poppins-SemiBold.ttf);
 }
@@ -15,6 +16,7 @@
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
+  font-display: swap;
   font-weight: 800;
   src: url(./fonts/Poppins-ExtraBold.ttf);
 }
