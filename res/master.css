@@ -42,24 +42,33 @@ a{
   bottom: auto;
 }
 
-/* project specific */
-.proj-left {
-  position: relative;
+.project:nth-child(odd) h2 {
+  position: relative !important;
+  filter: drop-shadow(0.07em 0.07em white);
+  text-align: left !important;
+  order: -1 !important;
+  -webkit-order: -1 !important;
   left: 20vw;
 }
-.proj-right {
-  position: relative;
+
+.project:nth-child(even) h2 {
+  position: relative !important;
+  filter: drop-shadow(0.07em 0.07em white);
+  text-align: right !important;
   right: 20vw;
 }
-.project-img {
+
+.project:nth-child(even) div.col {
+  text-align: right !important;
+  order: -1 !important;
+  -webkit-order: -1 !important;
+}
+
+.project div img {
   height: 25vh;
   object-fit: contain;
 }
 
 .hide {
   display: none;
-}
-
-h2 {
-  filter: drop-shadow(0.07em 0.07em white);
 }
