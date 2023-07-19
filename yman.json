@@ -2,10 +2,38 @@
   "instances": [
     {
       "app": "Invidious",
-      "region": "North America",
+      "region": "World",
       "country": "United States",
-      "flag": "🇺🇸",
-      "url": "https://watchapi.whatever.social"
+      "flag": "🏳",
+      "url": "https://inv.us.projectsegfau.lt"
+    },
+    {
+      "app": "Invidious",
+      "region": "World",
+      "country": "United States",
+      "flag": "🏳",
+      "url": "https://invidious.tiekoetter.com"
+    },
+    {
+      "app": "Invidious",
+      "region": "World",
+      "country": "United States",
+      "flag": "🏳",
+      "url": "https://invidious.flokinet.to"
+    },
+    {
+      "app": "Invidious",
+      "region": "World",
+      "country": "United States",
+      "flag": "🏳",
+      "url": "https://yt.artemislena.eu"
+    },
+    {
+      "app": "Invidious",
+      "region": "World",
+      "country": "United States",
+      "flag": "🏳",
+      "url": "https://inv.pistasjis.net"
     }
   ]
 }
