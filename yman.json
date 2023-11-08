@@ -3,23 +3,9 @@
     {
       "app": "Invidious",
       "region": "North America",
-      "country": "United States",
-      "flag": "🇺🇸",
-      "url": "https://inv.us.projectsegfau.lt"
-    },
-    {
-      "app": "Invidious",
-      "region": "North America",
-      "country": "United States",
-      "flag": "🇺🇸",
-      "url": "https://invidious.tiekoetter.com"
-    },
-    {
-      "app": "Invidious",
-      "region": "North America",
-      "country": "United States",
-      "flag": "🇺🇸",
-      "url": "https://invidious.flokinet.to"
+      "country": "ProjectSF",
+      "flag": "🇧🇪",
+      "url": "https://invidious.projectsegfau.lt"
     },
     {
       "app": "Invidious",
@@ -33,8 +19,50 @@
       "region": "North America",
       "country": "United States",
       "flag": "🇺🇸",
-      "url": "https://inv.pistasjis.net"
-    }
+      "url": "https://invidious.fdn.fr"
+    },
+    {
+      "app": "Invidious",
+      "region": "North America",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "url": "https://invidious.nerdvpn.de"
+    },
+    {
+      "app": "Invidious",
+      "region": "North America",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "url": "https://invidious.lunar.icu"
+    },
+    {
+      "app": "Invidious",
+      "region": "North America",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "url": "https://invidious.io.lol"
+    },
+    {
+      "app": "Invidious",
+      "region": "North America",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "url": "https://vid.priv.au"
+    },
+    {
+      "app": "Invidious",
+      "region": "North America",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "url": "https://onion.tube/"
+    },
+    {
+      "app": "Invidious",
+      "region": "North America",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "url": "https://iv.nboeck.de/"
+    },
   ]
 }
 
